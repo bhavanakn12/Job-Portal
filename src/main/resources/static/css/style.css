@@ -1,0 +1,704 @@
+/* ==============================
+   GLOBAL
+============================== */
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fb;
+    color: #212529;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+
+/* ==============================
+   NAVBAR
+============================== */
+
+.navbar {
+    padding: 16px 0;
+    background: #ffffff !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #0d6efd !important;
+    letter-spacing: 0.3px;
+}
+
+.navbar-brand:hover {
+    color: #0a58ca !important;
+}
+
+
+/* ==============================
+   HERO SECTION
+============================== */
+
+.hero {
+    padding: 80px 20px;
+    background: linear-gradient(
+        135deg,
+        #0d6efd 0%,
+        #6610f2 100%
+    );
+    color: white;
+    border-radius: 0 0 30px 30px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+
+/* ==============================
+   BUTTONS
+============================== */
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 9px 18px;
+}
+
+.btn-primary {
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    transition: 0.2s;
+}
+
+
+/* ==============================
+   CARDS
+============================== */
+
+.card,
+.feature-card {
+    border: none;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.card {
+    transition: 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+.feature-card {
+    padding: 25px;
+    height: 100%;
+}
+
+
+/* ==============================
+   FEATURE ICONS
+============================== */
+
+.feature-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+    background: #e7f1ff;
+    color: #0d6efd;
+
+    font-size: 1.4rem;
+}
+
+
+/* ==============================
+   FORMS
+============================== */
+
+.form-control,
+.form-select {
+    min-height: 46px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+
+/* ==============================
+   AUTH PAGES
+============================== */
+
+.auth-container {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h2 {
+    font-weight: 700;
+}
+
+
+/* ==============================
+   DASHBOARD
+============================== */
+
+.dashboard-header {
+    padding: 35px 0 20px;
+}
+
+.dashboard-header h2 {
+    font-weight: 700;
+}
+
+
+/* ==============================
+   JOB CARDS
+============================== */
+
+.job-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 18px;
+
+    border: 1px solid #edf0f5;
+
+    transition: 0.25s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 24px rgba(0, 0, 0, 0.08);
+}
+
+.job-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+.company-name {
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.job-meta {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+
+/* ==============================
+   TABLES
+============================== */
+
+.table {
+    vertical-align: middle;
+}
+
+.table thead th {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.table tbody tr {
+    transition: background 0.15s ease;
+}
+
+.table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+
+/* ==============================
+   BADGES
+============================== */
+
+.badge {
+    padding: 7px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+
+/* ==============================
+   SEARCH
+============================== */
+
+.search-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ==============================
+   ALERTS
+============================== */
+
+.alert {
+    border-radius: 10px;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    margin-top: 60px;
+    padding: 30px 0;
+    background: #212529;
+    color: #adb5bd;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #0d6efd;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 55px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .auth-card {
+        padding: 25px;
+    }
+
+    .dashboard-header {
+        padding-top: 25px;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
+/* ==============================
+   SEEKER JOB GRID
+============================== */
+
+#jobsList {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+#jobsList .job-card {
+    margin-bottom: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#jobsList .job-card .job-description {
+    flex-grow: 1;
+}
+
+.job-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.no-jobs {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+    border-radius: 14px;
+    color: #6c757d;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    #jobsList {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .job-card-header {
+        flex-direction: column;
+    }
+
+}
+/* ==============================
+   RECRUITER JOB CARDS
+============================== */
+
+#recruiterJobs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 100%;
+    max-width: 100%;
+}
+
+#recruiterJobs .job-card {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 28px;
+    min-height: 320px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+#recruiterJobs .job-card .job-description {
+    flex-grow: 1;
+}
+
+#recruiterJobs .job-card button {
+    width: 100%;
+    margin-top: auto;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    #recruiterJobs {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+}
+/* ==============================
+   RECRUITER JOB POSTINGS
+============================== */
+
+#recruiterJobs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#recruiterJobs .job-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 300px;
+    padding: 28px;
+    margin: 0;
+    border-radius: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+#recruiterJobs .job-card .job-description {
+    flex-grow: 1;
+}
+
+#recruiterJobs .job-card button {
+    width: 100%;
+    margin-top: auto;
+}
+
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 900px) {
+
+    #recruiterJobs {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 600px) {
+
+    #recruiterJobs {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+}
+/* =========================================
+   FIX RECRUITER JOB CARD WIDTH
+========================================= */
+
+#recruiterJobs {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+    max-width: none !important;
+}
+
+#recruiterJobs .job-card {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 28px !important;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    #recruiterJobs {
+        grid-template-columns: 1fr !important;
+    }
+
+}
+/* =========================================
+   FINAL FIX - RECRUITER JOB CARDS
+========================================= */
+
+#recruiterJobs {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+    gap: 24px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+}
+
+#recruiterJobs .job-card {
+    flex: 0 0 calc(50% - 12px) !important;
+    width: calc(100% - 12px) !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    #recruiterJobs .job-card {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+    }
+
+}
+/* =========================================
+   ADMIN DASHBOARD
+========================================= */
+
+.admin-stat-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #f1f5f9;
+
+    font-size: 22px;
+}
+
+.admin-stat-icon i {
+    color: #0d6efd;
+}
+
+.dashboard-header h2 {
+    font-weight: 700;
+}
+
+#usersList td {
+    padding: 16px;
+}
+
+#usersList tr {
+    transition: background 0.2s ease;
+}
+
+#usersList tr:hover {
+    background: #f8fafc;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .admin-stat-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
+
+}
+/* =========================================
+   AUTH PAGES
+========================================= */
+
+.auth-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+}
+
+.auth-container {
+    min-height: calc(100vh - 140px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 440px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.auth-icon {
+    width: 64px;
+    height: 64px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eaf2ff;
+
+    color: #0d6efd;
+
+    font-size: 30px;
+}
+
+.auth-card .form-label {
+    font-weight: 600;
+}
+
+.auth-card .form-control,
+.auth-card .input-group-text,
+.auth-card .password-toggle {
+    min-height: 46px;
+}
+
+.auth-card .input-group-text {
+    background: #f8fafc;
+}
+
+.password-toggle {
+    width: 50px;
+}
+
+.password-toggle i {
+    font-size: 18px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    .auth-card {
+        padding: 28px 22px;
+    }
+
+    .auth-container {
+        padding: 30px 15px;
+    }
+
+}

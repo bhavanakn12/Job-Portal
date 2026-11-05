@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Register | CareerConnect</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+          th:href="@{/css/style.css}">
+
+</head>
+
+<body class="auth-page">
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar bg-white shadow-sm">
+
+    <div class="container">
+
+        <a href="/" class="navbar-brand fw-bold">
+            CareerConnect
+        </a>
+
+        <a href="/login"
+           class="btn btn-outline-primary">
+
+            Login
+
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= REGISTER ================= -->
+
+<div class="auth-container">
+
+    <div class="auth-card">
+
+        <div class="text-center mb-4">
+
+            <div class="auth-icon">
+
+                <i class="bi bi-person-plus"></i>
+
+            </div>
+
+            <h2 class="fw-bold mt-3">
+                Create Account
+            </h2>
+
+            <p class="text-muted">
+                Join CareerConnect and start your journey
+            </p>
+
+        </div>
+
+
+        <!-- MESSAGE -->
+
+        <div id="message"
+             class="alert d-none">
+        </div>
+
+
+        <!-- REGISTER FORM -->
+
+        <form id="registerForm">
+
+            <!-- FULL NAME -->
+
+            <div class="mb-3">
+
+                <label for="fullName"
+                       class="form-label">
+                    Full Name
+                </label>
+
+                <div class="input-group">
+
+                    <span class="input-group-text">
+                        <i class="bi bi-person"></i>
+                    </span>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        class="form-control"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="mb-3">
+
+                <label for="email"
+                       class="form-label">
+                    Email Address
+                </label>
+
+                <div class="input-group">
+
+                    <span class="input-group-text">
+                        <i class="bi bi-envelope"></i>
+                    </span>
+
+                    <input
+                        type="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+            </div>
+
+
+            <!-- PASSWORD -->
+
+            <div class="mb-3">
+
+                <label for="password"
+                       class="form-label">
+                    Password
+                </label>
+
+                <div class="input-group">
+
+                    <span class="input-group-text">
+                        <i class="bi bi-lock"></i>
+                    </span>
+
+                    <input
+                        type="password"
+                        id="password"
+                        class="form-control"
+                        placeholder="Minimum 8 characters"
+                        minlength="8"
+                        required>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline-secondary password-toggle"
+                        onclick="togglePassword('password', this)"
+                        aria-label="Show password">
+
+                        <i class="bi bi-eye"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ROLE -->
+
+            <div class="mb-4">
+
+                <label for="role"
+                       class="form-label">
+                    Register As
+                </label>
+
+                <div class="input-group">
+
+                    <span class="input-group-text">
+                        <i class="bi bi-briefcase"></i>
+                    </span>
+
+                    <select
+                        id="role"
+                        class="form-select"
+                        required>
+
+                        <option value="">
+                            Select your role
+                        </option>
+
+                        <option value="JOB_SEEKER">
+                            Job Seeker
+                        </option>
+
+                        <option value="RECRUITER">
+                            Recruiter
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+
+            <button
+                type="submit"
+                class="btn btn-primary w-100 py-2">
+
+                <i class="bi bi-person-plus me-1"></i>
+
+                Create Account
+
+            </button>
+
+        </form>
+
+
+        <!-- LOGIN LINK -->
+
+        <div class="text-center mt-4">
+
+            <p class="text-muted mb-0">
+
+                Already have an account?
+
+                <a href="/login"
+                   class="fw-semibold text-decoration-none">
+
+                    Login here
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container text-center">
+
+        <p class="mb-0">
+            © 2026 CareerConnect. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script th:src="@{/js/script.js}"></script>
+
+</body>
+
+</html>
